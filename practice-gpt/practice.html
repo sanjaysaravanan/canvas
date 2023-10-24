@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Move Circle in a Div</title>
+    <style>
+        #canvasContainer {
+          position: relative;
+          width: 400px;
+          height: 400px;
+          border: 1px solid #000;
+        }
+
+        #myCanvas {
+          position: absolute;
+        }
+
+        body {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        button {
+          margin: 5px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+</head>
+<body>
+    <div id="canvasContainer">
+        <canvas id="myCanvas" width="400" height="400"></canvas>
+    </div>
+    <div style="width: 100px; text-align: center;" >
+      <div style="text-align: center;" >
+        <button id="moveUpButton">
+          <i class="fa-solid fa-caret-up"></i>
+        </button>
+      </div>
+      <div style="display: flex; justify-content: space-between;" >
+        <button id="moveLeftButton">
+          <i class="fa-solid fa-caret-left"></i>
+        </button>
+        <button id="moveRightButton">
+          <i class="fa-solid fa-caret-right"></i>
+        </button>
+      </div>
+      <div style="text-align: center;" >
+        <button id="moveDownButton">
+          <i class="fa-solid fa-caret-down"></i>
+        </button>
+      </div>
+    </div>
+    <script src="practice.js"></script>
+</body>
+</html>
